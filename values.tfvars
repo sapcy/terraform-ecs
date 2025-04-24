@@ -8,12 +8,12 @@ region = "us-east-1"
 zone_1 = "us-east-1a"
 
 # cluster variables
-ecr_arn = "arn:aws:ecr:us-east-1:442426881206:repository/{repo_name}"
-ecr_url = "{user}.dkr.ecr.us-east-1.amazonaws.com/test-ns/test-repo:latest"
+ecr_arn = "arn:aws:ecr:{region}:{user}:repository/{repo_name}"
+ecr_url = "{user}.dkr.ecr.{region}.amazonaws.com/{repo_name}:latest"
 log_group = "/ecs/"
 log_stream = "ecs"
-namespace = "test-ns"
-environment = "test"
+namespace = ""
+environment = "dev"
 instance_type = "t2.micro"
 maximum_scaling_step_size = 1
 minimum_scaling_step_size = 1
