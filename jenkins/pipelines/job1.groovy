@@ -8,6 +8,7 @@ def job1() {
             stage('build') {
                 steps {
                     script {
+                        sh "${env.WORKSPACE}"
                         core.build(this)
                     }
                 }
