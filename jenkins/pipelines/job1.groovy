@@ -1,8 +1,8 @@
-def job1(context) {
+def job1() {
     def core = load('jenkins/libs/core.groovy')
 
-    core.build(context)
-    core.sonarqube(context)
+    core.build()
+    core.sonarqube()
 }
 
 return this

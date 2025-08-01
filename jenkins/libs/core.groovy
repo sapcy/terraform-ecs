@@ -1,9 +1,9 @@
-def build(context) {
-    context.echo "Execute build"
+def build() {
+    echo "Execute build"
 }
 
-def sonarqube(context) {
-    context.echo "Execute sonarqube"
+def sonarqube() {
+    echo "Execute sonarqube"
 }
 
 return this
