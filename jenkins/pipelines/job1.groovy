@@ -1,5 +1,8 @@
-def build() {
-    echo "🎉 build() 함수 호출 성공!"
+def job1() {
+    def core = load('jenkins/libs/core.groovy')
+
+    core.build()
+    core.sonarqube()
 }
 
 return this

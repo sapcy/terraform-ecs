@@ -1,5 +1,9 @@
 def build(context) {
-    context.echo "Hello from core.groovy"
+    context.echo "Execute build"
+}
+
+def sonarqube(context) {
+    context.echo "Execute sonarqube"
 }
 
 return this
