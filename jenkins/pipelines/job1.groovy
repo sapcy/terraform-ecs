@@ -1,5 +1,5 @@
 def job1() {
-    def core = load "${env.WORKSPACE}/jenkins/lib/core.groovy"
+    def core = load "${env.WORKSPACE}/jenkins/libs/core.groovy"
 
     pipeline {
         agent any
