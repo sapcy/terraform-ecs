@@ -1,17 +1,5 @@
-def job1() {
-    def core = load "jenkins/libs/core.groovy"
-
-    pipeline {
-        agent any
-
-        stages {
-            stage('build') {
-                steps {
-                    script {
-                        core.build(this)
-                    }
-                }
-            }
-        }
-    }
+def build() {
+    echo "🎉 build() 함수 호출 성공!"
 }
+
+return this
