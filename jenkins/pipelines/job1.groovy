@@ -1,5 +1,5 @@
 def job1() {
-    def core = load "${env.WORKSPACE}/jenkins/libs/core.groovy"
+    def core = load "/var/jenkins_home/workspace/테스트1/Job1/jenkins/libs/core.groovy"
 
     pipeline {
         agent any
@@ -8,7 +8,6 @@ def job1() {
             stage('build') {
                 steps {
                     script {
-                        sh "${env.WORKSPACE}"
                         core.build(this)
                     }
                 }
